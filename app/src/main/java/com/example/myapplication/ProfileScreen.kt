@@ -97,7 +97,7 @@ fun ProfileScreen() {
                     // Task 5 — Reusable InfoRow (×5)
                     InfoRow(Icons.Default.Person, "Full Name", "Agustero, Bob Benedict")
                     InfoRow(Icons.Default.School, "Course", "BSIT")
-                    InfoRow(Icons.Default.Class, "Section", "3-A")
+                    InfoRow(Icons.Default.Class, "Section", "3-1gi")
                     InfoRow(Icons.Default.Phone, "Mobile Number", "0912-345-6789")
                     InfoRow(Icons.Default.Email, "Email Address", "bob.agustero@liceo.edu.ph")
                 }

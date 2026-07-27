@@ -52,7 +52,7 @@ fun ProfileScreen() {
                 contentAlignment = Alignment.Center
             ) {
                 Text(
-                    text = "AR", // Initials
+                    text = "AB", // Initials
                     color = MaterialTheme.colorScheme.onPrimary,
                     style = MaterialTheme.typography.headlineSmall
                 )
@@ -62,7 +62,7 @@ fun ProfileScreen() {
 
             // Task 3 — Full name & subtitle
             Text(
-                text = "Agustero, Raso", 
+                text = "Agustero, Bob Benedict", 
                 style = MaterialTheme.typography.headlineSmall,
                 color = MaterialTheme.colorScheme.primary
             )
@@ -88,11 +88,11 @@ fun ProfileScreen() {
                     modifier = Modifier.padding(16.dp)
                 ) {
                     // Task 5 — Reusable InfoRow (×5)
-                    InfoRow(Icons.Default.Person, "Full Name", "Agustero, Raso")
+                    InfoRow(Icons.Default.Person, "Full Name", "Agustero, Bob Benedict")
                     InfoRow(Icons.Default.School, "Course", "BSIT")
                     InfoRow(Icons.Default.Class, "Section", "3-A")
                     InfoRow(Icons.Default.Phone, "Mobile Number", "0912-345-6789")
-                    InfoRow(Icons.Default.Email, "Email Address", "raso.agustero@liceo.edu.ph")
+                    InfoRow(Icons.Default.Email, "Email Address", "bob.agustero@liceo.edu.ph")
                 }
             }
         }

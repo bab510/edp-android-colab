@@ -3,7 +3,7 @@ package com.example.myapplication.ui.theme
 import androidx.compose.ui.graphics.Color
 
 // Light Theme Colors
-val LightPrimary = Color(0xFF771C1B)
+val LightPrimary = Color(0xFFA44B4A)
 val LightOnPrimary = Color(0xFFFFFFFF)
 val LightPrimaryContainer = Color(0xFFE9C9C8)
 val LightSecondary = Color(0xFF9E4744)
@@ -12,8 +12,8 @@ val LightOnSurfaceVariant = Color(0xFF5A4D4C)
 
 // Dark Theme Colors
 val DarkPrimary = Color(0xFFE0A3A0)
-val DarkOnPrimary = Color(0xFF511313)
-val DarkPrimaryContainer = Color(0xFF651817)
-val DarkSecondary = Color(0xFFD49B99)
+val DarkOnPrimary = Color(0xFFE76060)
+val DarkPrimaryContainer = Color(0xFFD57A79)
+val DarkSecondary = Color(0xFFA68886)
 val DarkSurface = Color(0xFF1A1110)
 val DarkOnSurfaceVariant = Color(0xFFC9B8B7)

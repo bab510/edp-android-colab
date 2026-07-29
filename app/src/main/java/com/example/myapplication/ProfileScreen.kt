@@ -18,7 +18,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.myapplication.ui.theme.ProfileTheme
 
-// Stretch Goal: Extract sizes into named constants
+// Layout Constants
 private val AvatarSize = 120.dp
 private val HorizontalPadding = 16.dp
 private val CardPadding = 24.dp
@@ -49,9 +49,9 @@ fun ProfileScreen() {
                 .padding(paddingValues)
                 .padding(horizontal = HorizontalPadding),
             horizontalAlignment = Alignment.CenterHorizontally,
-            verticalArrangement = Arrangement.Center // Task 1
+            verticalArrangement = Arrangement.Center
         ) {
-            // Task 2 — Circular avatar
+            // Circular avatar
             Box(
                 modifier = Modifier
                     .size(AvatarSize)
@@ -61,7 +61,7 @@ fun ProfileScreen() {
                 contentAlignment = Alignment.Center
             ) {
                 Text(
-                    text = "AB", // Initials for Agustero, Bob
+                    text = "AB",
                     color = MaterialTheme.colorScheme.onPrimary,
                     style = MaterialTheme.typography.headlineSmall
                 )
@@ -69,7 +69,7 @@ fun ProfileScreen() {
 
             Spacer(modifier = Modifier.height(SpacerMedium))
 
-            // Task 3 — Full name & subtitle
+            // Full name & subtitle
             Text(
                 text = "Agustero, Bob Benedict", 
                 style = MaterialTheme.typography.headlineSmall,
@@ -84,7 +84,7 @@ fun ProfileScreen() {
 
             Spacer(modifier = Modifier.height(SpacerLarge))
 
-            // Task 4 — The Info Card
+            // Info Card
             Card(
                 modifier = Modifier
                     .fillMaxWidth()
@@ -94,10 +94,9 @@ fun ProfileScreen() {
                 Column(
                     modifier = Modifier.padding(16.dp)
                 ) {
-                    // Task 5 — Reusable InfoRow (×5)
                     InfoRow(Icons.Default.Person, "Full Name", "Agustero, Bob Benedict")
                     InfoRow(Icons.Default.School, "Course", "BSIT")
-                    InfoRow(Icons.Default.Class, "Section", "3-1gi")
+                    InfoRow(Icons.Default.Class, "Section", "3-A")
                     InfoRow(Icons.Default.Phone, "Mobile Number", "0912-345-6789")
                     InfoRow(Icons.Default.Email, "Email Address", "bob.agustero@liceo.edu.ph")
                 }
@@ -108,11 +107,10 @@ fun ProfileScreen() {
 
 @Composable
 fun InfoRow(icon: ImageVector, label: String, value: String) {
-    // Stretch Goal: Make each InfoRow clickable with a ripple
     Row(
         modifier = Modifier
             .fillMaxWidth()
-            .clickable { /* Handle click */ }
+            .clickable { /* Ripple effect enabled */ }
             .padding(vertical = 8.dp, horizontal = 4.dp),
         verticalAlignment = Alignment.CenterVertically
     ) {

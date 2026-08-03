@@ -21,13 +21,13 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         
-        val maroon = Color(0xFF800000)
+        val yellowGreen = Color(0xFF9ACD32)
         val offWhite = Color(0xFFFAF9F6)
         
         setContent {
             MaterialTheme(
                 colorScheme = lightColorScheme(
-                    primary = maroon,
+                    primary = yellowGreen,
                     onPrimary = Color.White,
                     background = offWhite,
                     surface = offWhite,
